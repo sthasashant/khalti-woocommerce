@@ -266,7 +266,7 @@ class WC_Gateway_Khalti_Payment_Gateway extends WC_Payment_Gateway {
 			return false;
 		}
 
-		if ( ! is_ssl() && 'yes' != $this->sandbox ) {
+		if ('yes' != $this->sandbox ) {
 			return false;
 		}
 
